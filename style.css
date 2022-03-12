@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -9,4 +9,94 @@ body {
   padding: 0;
 }
 
-/* Add styles here! */
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --green: hsl(160deg, 100%, 30%);
+  --light-gold: hsl(45deg, 100%, 50%);
+  --dark-gold: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --very-dark-gray: hsl(0deg, 0%, 10%);
+  --dark-gray: hsl(0deg, 0%, 30%);
+  --medium-gray: hsl(0deg, 0%, 40%);
+  --light-gray: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+
+  --xs: 8px;
+  --sm: 16px;
+  --reg: 24px;
+  --lg: 32px;
+  --xl: 48px;
+  --2xl: 64px;
+  --3xl: 96px;
+  --4xl: 128px;
+
+  --fs-sm: 1rem;
+  --fs-reg: 1.25rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2rem;
+}
+
+/* header {
+  background-color: var(--light-gray);
+  padding-bottom: var(--2xl);
+} */
+
+.intro-chunk {
+  background-color: white;
+  padding: var(--3xl) var(--lg) var(--2xl);
+}
+
+.intro-chunk > h1 {
+  margin-bottom: var(--2xl);
+}
+
+.intro-chunk > p {
+  margin-bottom: var(--reg);
+}
+
+main {
+  padding-top: var(--2xl);
+  background-color: var(--light-gray);
+  border-top: var(--xs) solid var(--dark-gray);
+}
+
+.card {
+  padding: var(--xs) var(--lg) 0;
+  background-color: white;
+}
+
+.indented-heading {
+  background-color: var(--light-gold);
+  margin-left: calc(var(--lg) * -1);
+  padding-left: var(--lg);
+  margin-bottom: var(--lg);
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-bottom: var(--2xl);
+  }
+
+  .card {
+    padding-bottom: var(--lg);
+    border-bottom: var(--xs) solid var(--dark-gray);
+  }
+}
+
+@media (min-width: 1268px) {
+  .max-width-wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    border-bottom: 0;
+  }
+}
